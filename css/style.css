@@ -1,7 +1,10 @@
 /* GLOBAL */
 body {
   font-family: "PT Sans", sans-serif;
-  background-color: lightgray;
+}
+
+section {
+  padding-top: 50px;
 }
 
 .btn, .btn:link, .btn:visited {
@@ -120,5 +123,45 @@ body {
   text-transform: uppercase;
   color: white;
   font-weight: 700;
+}
+
+/*Services*/
+.row {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.section-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  text-align: center;
+}
+
+.section-title h3 {
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+i {
+  color: #f1c40f;
+  padding-top: 15px;
+  font-size: 32px;
+  border: 3px solid #f1c40f;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+h4 {
+  font-weight: 700;
+}
+
+p {
+  color: #7f8c8d;
 }
 /*# sourceMappingURL=style.css.map */
