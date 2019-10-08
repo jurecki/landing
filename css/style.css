@@ -1,0 +1,124 @@
+/* GLOBAL */
+body {
+  font-family: "PT Sans", sans-serif;
+  background-color: lightgray;
+}
+
+.btn, .btn:link, .btn:visited {
+  padding: 15px 30px;
+  background-color: #f1c40f;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5%;
+  border: none;
+  display: inline-block;
+}
+
+.btn:hover, .btn:link:hover, .btn:visited:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active, .btn:link:active, .btn:visited:active {
+  transform: translateY(-1px);
+}
+
+/* Navigation */
+.navbar {
+  text-align: right;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  /* Menu pierwszego poziomu */
+  /* Menu kolejnych poziomow */
+}
+
+.navbar ul li {
+  display: inline-block;
+  padding-right: 20px;
+  position: relative;
+  z-index: 1;
+  /* pokazanie submenu po hover na li */
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px;
+  color: white;
+}
+
+.navbar ul li a:hover {
+  background-color: #7f8c8d;
+}
+
+.navbar ul li:hover > ul {
+  display: inline-block;
+}
+
+.navbar ul ul {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+}
+
+.navbar ul ul li {
+  display: block;
+  margin-bottom: 12px;
+  min-width: 200px;
+  z-index: 1;
+}
+
+/* Splash */
+.splash {
+  height: 100vh;
+  position: relative;
+  margin-top: -30px;
+}
+
+.splash img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.splash::after {
+  content: '';
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: .3;
+}
+
+.splash-inner {
+  position: absolute;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.splash-inner p {
+  font-size: 32px;
+  color: white;
+  font-style: italic;
+}
+
+.splash-inner h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */
