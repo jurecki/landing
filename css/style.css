@@ -1,6 +1,7 @@
+@import url(//db.onlinewebfonts.com/c/d6ced0df95b7cc53e0eae88817930d08?family=Wisdom+Script+AI);
 /* GLOBAL */
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 section {
@@ -9,13 +10,14 @@ section {
 
 .btn, .btn:link, .btn:visited {
   padding: 15px 30px;
-  background-color: #f1c40f;
+  background-color: #fed136;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 5%;
   border: none;
   display: inline-block;
+  font-weight: 400;
 }
 
 .btn:hover, .btn:link:hover, .btn:visited:hover {
@@ -25,6 +27,25 @@ section {
 
 .btn:active, .btn:link:active, .btn:visited:active {
   transform: translateY(-1px);
+}
+
+.nav {
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin: auto auto;
+}
+
+/*Logo*/
+.logo {
+  z-index: 1;
+  font-family: "Wisdom Script AI";
+  color: #fed136;
+  font-size: 20px;
+  text-align: left;
 }
 
 /* Navigation */
@@ -51,6 +72,7 @@ section {
 .navbar ul li a {
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 14px;
   padding: 5px;
   color: white;
 }
@@ -81,7 +103,7 @@ section {
 .splash {
   height: 100vh;
   position: relative;
-  margin-top: -30px;
+  margin-top: -50px;
 }
 
 .splash img {
@@ -99,7 +121,7 @@ section {
   height: 100%;
   top: 0;
   left: 0;
-  opacity: .3;
+  opacity: .4;
 }
 
 .splash-inner {
@@ -113,16 +135,17 @@ section {
 }
 
 .splash-inner p {
-  font-size: 32px;
+  font-size: 40px;
   color: white;
+  font-family: "droid-serif", serif;
   font-style: italic;
 }
 
 .splash-inner h1 {
-  font-size: 48px;
+  font-size: 65px;
   text-transform: uppercase;
   color: white;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 /*Services*/
@@ -148,10 +171,10 @@ section {
 }
 
 i {
-  color: #f1c40f;
+  color: #fed136;
   padding-top: 15px;
   font-size: 32px;
-  border: 3px solid #f1c40f;
+  border: 3px solid #fed136;
   height: 70px;
   width: 70px;
   border-radius: 50%;

@@ -1,11 +1,14 @@
+@import url(//db.onlinewebfonts.com/c/d6ced0df95b7cc53e0eae88817930d08?family=Wisdom+Script+AI);
+
 /* GLOBAL */
 
-$color-one: #f1c40f;
+$color-one: #fed136;
 $color-two: #7f8c8d;
 $color-light: white;
 
-$text-font: 'PT Sans', sans-serif;
-$header-font:'Open Sans', sans-serif;
+$text-font: 'Montserrat', sans-serif;
+$logo-font:  "Wisdom Script AI";
+$head-font: "droid-serif", serif;
 
 body {
     font-family: $text-font;
@@ -24,9 +27,9 @@ section {
     border-radius: 5%;
     border:none;
     display:inline-block;
+    font-weight: 400;
 
     &:hover {
-
         transform: translateY(-2px);
         box-shadow: 0 10px 20px rgba(0,0,0,.2);
     }
@@ -34,6 +37,23 @@ section {
     &:active {
         transform: translateY(-1px);
     } 
+
+}
+
+.nav {
+    display: flex;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto auto;
+}
+/*Logo*/
+.logo {
+    z-index: 1;
+    font-family: $logo-font;
+    color: $color-one;
+    font-size: 20px;
+    text-align: left;
 
 }
 
@@ -53,6 +73,7 @@ section {
             a {
                 text-decoration: none;
                 text-transform: uppercase;
+                font-size: 14px;
                 padding: 5px;
                 color: $color-light;
                 &:hover {
@@ -88,7 +109,8 @@ section {
 .splash {
     height: 100vh;
     position: relative;
-    margin-top: -30px;
+    margin-top: -50px;
+    
 
     img {
         width: 100%;
@@ -103,7 +125,7 @@ section {
         height: 100%;
         top: 0;
         left: 0;
-        opacity: .3;
+        opacity: .4;
     }
 }
 
@@ -116,16 +138,17 @@ section {
     text-align: center;
     z-index: 1;
     p {
-        font-size: 32px;
+        font-size: 40px;
         color: $color-light;
+        font-family: $head-font;
         font-style: italic;
     }
 
     h1 {
-        font-size: 48px;
+        font-size: 65px;
         text-transform: uppercase;
         color: $color-light;
-        font-weight: 700;
+        font-weight: 800;
     }
 }
 
