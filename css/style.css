@@ -5,7 +5,7 @@ body {
 }
 
 section {
-  padding-top: 50px;
+  padding: 100px 0;
 }
 
 .btn, .btn:link, .btn:visited {
@@ -163,11 +163,14 @@ section {
 
 .section-title h2 {
   text-align: center;
+  text-transform: uppercase;
 }
 
 .section-title h3 {
+  font-family: "droid-serif", serif;
   font-style: italic;
   color: #7f8c8d;
+  font-weight: 100;
 }
 
 i {
@@ -186,5 +189,24 @@ h4 {
 
 p {
   color: #7f8c8d;
+}
+
+/* Portfolio */
+.portfolio {
+  background-color: lightgrey;
+}
+
+.card {
+  background-color: white;
+  width: 30%;
+  height: 400px;
+  margin: 20px 30px 20px 0;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
